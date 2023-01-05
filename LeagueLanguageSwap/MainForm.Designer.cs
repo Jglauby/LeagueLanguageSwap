@@ -67,8 +67,8 @@ namespace LeagueLanguageSwap
         /// </summary>
         private void InitializeComponent()
         {
-            this.Text = "League Language Swap";
-            this.Size = new Size(500, 390);
+            this.Text = "League Language Swap V1.0";
+            this.Size = new Size(500, 350);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -81,13 +81,13 @@ namespace LeagueLanguageSwap
             formTable.RowCount = 2;
 
             Label instructionLabel = new Label();
-            instructionLabel.Text = "Ensure you are logged out of league and your client is closed. \nThen proceed to click the language you want to switch the game to!";
-            instructionLabel.Size = new Size(this.Width, 25);
+            instructionLabel.Text = "Ensure your League client is closed. \nThen proceed to click the language you want to switch the game to!";
+            instructionLabel.Size = new Size(this.Width, 27);
 
             buttons.Add(new Button { Text = "Japanese" });
-            buttons.Add(new Button { Text = "Korean", Enabled = false });
-            buttons.Add(new Button { Text = "Chinese", Enabled = false });
-            buttons.Add(new Button { Text = "Taiwanese" , Enabled = false });
+            buttons.Add(new Button { Text = "Korean", Visible = false });
+            buttons.Add(new Button { Text = "Chinese", Visible = false });
+            buttons.Add(new Button { Text = "Taiwanese" , Visible = false });
             buttons.Add(new Button { Text = "Spanish (Spain)" });
             buttons.Add(new Button { Text = "Spanish \n (Latin America)" });
             buttons.Add(new Button { Text = "English" });
